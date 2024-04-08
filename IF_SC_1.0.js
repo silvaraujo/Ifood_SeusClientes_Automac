@@ -29,9 +29,34 @@ const continuar_button = document.querySelector('#micro-frontend-crm > div.index
 continuar_button.click();
 
 //Seleciona entrega grátis
-const entrega = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-gGnURB.iTOJzk > div:nth-child(1) > div.sc-bczRLJ.kJSGHS');
-entrega.click();
+const entrega_select = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-gGnURB.iTOJzk > div:nth-child(1) > div.sc-bczRLJ.kJSGHS');
+entrega_select.click();
 
 //Seleciona o botão continuar, novamente
 const continuar_button = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-bczRLJ.cllSmU > button');
 continuar_button.click();
+
+//Clica no input data
+var clica_list = document.querySelector('#dueDate');
+clica_list.click();
+
+//Seleciona a data do dia de amanhã
+// Obter a data de hoje
+const hoje = new Date();
+
+// Selecionar todos os elementos dentro de DayPicker-Week
+const selector_quatrosemanas = document.querySelectorAll('.DayPicker-Week .DayPicker-inner-day');
+
+// Iterar sobre os elementos para encontrar o primeiro número maior que o dia de hoje
+for (const elemento of elementos) {
+    // Obter o número do dia do elemento e converter para número
+    const numeroDia = parseInt(elemento.textContent, 10);
+
+    // Verificar se o número do dia é maior que o dia de hoje
+    if (numeroDia > hoje.getDate()) {
+        // Simular o clique no elemento
+        elemento.click();
+        // Parar a iteração após o clique
+        break;
+    }
+}
