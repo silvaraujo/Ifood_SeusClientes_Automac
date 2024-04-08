@@ -48,14 +48,14 @@ const hoje = new Date();
 const selector_quatrosemanas = document.querySelectorAll('.DayPicker-Week .DayPicker-inner-day');
 
 // Iterar sobre os elementos para encontrar o primeiro número maior que o dia de hoje
-for (const elemento of elementos) {
+for (const data of selector_quatrosemanas) {
     // Obter o número do dia do elemento e converter para número
-    const numeroDia = parseInt(elemento.textContent, 10);
+    const numeroDia = parseInt(data.textContent, 10);
 
     // Verificar se o número do dia é maior que o dia de hoje
     if (numeroDia > hoje.getDate()) {
         // Simular o clique no elemento
-        elemento.click();
+        data.click();
         // Parar a iteração após o clique
         break;
     }
