@@ -60,3 +60,24 @@ for (const elemento of elementos) {
         break;
     }
 }
+
+//Seleciona o botão continuar após a última ação
+const continuar2_button = document.querySelector('body > div:nth-child(31) > div.sc-llJcti.eqJNn > div > div.sc-kLLXSd.iRtpfu > div > div:nth-child(2) > button.sc-kDDrLX.kIdHRO');
+continuar2_button.click();
+
+//Seleciona a opção - entrega grátis para quem segue
+const final1_select = document.querySelector('body > div:nth-child(31) > div.sc-llJcti.eqJNn > div > div.sc-bZkfAO.eJQDwa > div > div > div:nth-child(4) > label');
+final1_select.click();
+
+//Seleciona o botão continuar após a seleção, novamente
+const continuar2_button = document.querySelector('body > div:nth-child(31) > div.sc-llJcti.eqJNn > div > div.sc-kLLXSd.iRtpfu > div > div:nth-child(2) > button.sc-kDDrLX.kIdHRO');
+continuar2_button.click();
+
+//Seleciona o botão continuar após a última verificação, com o mesmo endereço
+const continuar2_button = document.querySelector('body > div:nth-child(31) > div.sc-llJcti.eqJNn > div > div.sc-kLLXSd.iRtpfu > div > div:nth-child(2) > button.sc-kDDrLX.kIdHRO');
+continuar2_button.click();
+
+//fechar a última tela
+//Seleciona o botão continuar após a última ação
+const ultimatela_close = document.querySelector('body > div:nth-child(31) > div.sc-llJcti.eqJNn > div > div.sc-hKMtZM.eIDMHW.sc-ezWOiH.janTdf');
+ultimatela_close.click();
