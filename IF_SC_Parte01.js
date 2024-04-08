@@ -13,16 +13,16 @@ const continuar_button = document.querySelector('#micro-frontend-crm > div.index
 continuar_button.click();
 
 //Aperta o listbox
-const list_open = document.querySelector('#downshift-11-toggle-button');
+const list_open = document.querySelector('#downshift-94-toggle-button');
 list.click();
 
 //Aperta o a opção 100 no listbox
-const list100_select = document.querySelector('#downshift-11-item-4');
-list100.click();
+const list100_select = document.querySelector('#downshift-94-item-4');
+list100_select.click();
 
 //Seleciona todos os clientes da tela
 const Span_Select = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-duzrYq.jtmVIG > table > thead > tr > th:nth-child(1) > div.sc-fLlhyt.bdchqW > div > div > span');
-SpanSelect.click();
+Span_Select.click();
 
 //Seleciona o botão continuar, novamente
 const continuar_button = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-bczRLJ.cllSmU > button');
