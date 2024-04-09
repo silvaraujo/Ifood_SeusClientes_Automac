@@ -12,11 +12,11 @@ seguidores_option.click();
 const continuar_button = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-bczRLJ.cllSmU > button');
 continuar_button.click();
 
-//Aperta o listbox
-const list_open = document.querySelector('#downshift-94-toggle-button');
-list.click();
+//Aperta o listbox. !! parece mudar de endereço dentro de "-n-"
+const list_open = document.querySelector('#downshift-0-toggle-button');
+list_open.click();
 
-//Aperta o a opção 100 no listbox
+//Aperta o a opção 100 no listbox !! mesma situação do código anterior
 const list100_select = document.querySelector('#downshift-94-item-4');
 list100_select.click();
 
@@ -92,7 +92,7 @@ voltar_begin.click();
 const crieNovasPromo_button = document.querySelector("#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe > div.indexstyles__PageSectionWrapper-partner-portal-crm__sc-1xv6gqj-0.hQKZRA > div.sc-gGnURB.iJWWCJ > div.sc-crXcEl.jwSbcz > div > div > button");
 crieNovasPromo_button.click();
 
-//Clica na aba quem adora comprar na loja 
+//Clica na aba quem adora comprar na loja !! observar o seletor desse código e comparar com o primeiro select. Ele aparecentemente funciona com 2 clicks
 const opção2_select = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-gGnURB.jRpMA-d > div.sc-crXcEl.iKLSdb.indexstyles__CardWrapper-partner-portal-crm__sc-1rtmpyq-1.kdGjDu');
 opção2_select.click();
 
@@ -100,11 +100,11 @@ opção2_select.click();
 const continuar_button = document.querySelector('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-bczRLJ.cllSmU > button');
 continuar_button.click();
 
-//Aperta o listbox - sempre muda de endereço, vai ter que consertar
+//Aperta o listbox -   !! mesma situação de antes - mudança repetida de endereço do selector
 const list_open = document.querySelector('#downshift-94-toggle-button');
 list_open.click();
 
-//Aperta o a opção 100 no listbox - sempre muda de endereço, e tem mesmo indíce do último
+//Aperta o a opção 100 no listbox - sempre muda de endereço, e tem mesmo indíce do último !! mesma situação de antes
 const list100_select = document.querySelector('#downshift-94-item-4');
 list100_select.click();
 
