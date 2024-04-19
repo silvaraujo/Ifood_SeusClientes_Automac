@@ -1,16 +1,18 @@
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-const clickElement = async (selector, delayTime) => {
+async function clickElement(selector, delayTime) {
     await delay(delayTime);
     const element = document.querySelector(selector);
     if (element) element.click();
-};
+}
 
-const selectDate = async (delayTime) => {
+async function selectDate(delayTime) {
     const dateBox = document.querySelector('#dueDate');
     dateBox.click();
     
-    await new Promise(resolve => setTimeout(resolve, delayTime)); // Aguarda o tempo especificado
+    await delay(delayTime); // Aguarda o tempo especificado
     
     const hoje = new Date();
     const selector_quatrosemanas = document.querySelectorAll('.DayPicker-Week .DayPicker-inner-day');
@@ -23,7 +25,9 @@ const selectDate = async (delayTime) => {
             break;
         }
     }
-};
+}
+
+
 
 (async () => {
     await clickElement('#app > div.tour-provider > div:nth-child(1) > div > div.main__body > div.styles__StyleCleaner-sc-8jua4n-0.ImuCo > div > div > div > div > div > div.Box-sc-1el6a4q-0.Body-sc-12hmyqf-0.bOMQhC.eeMbHW > div:nth-child(3) > a:nth-child(2) > div > div.TooltipReference-sc-15tsulq-1.iRubGO.Tooltip-sc-wn2msi-0.kxLiwV > div > div.TextCollapse-sc-wn2msi-4.bzwcGm > span', 2500);
