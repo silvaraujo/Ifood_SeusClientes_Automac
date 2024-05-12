@@ -26,7 +26,7 @@ const selectDate = async (delayTime) => {
 };
 
 (async () => {
-    await clickElement('#app > div.tour-provider > div:nth-child(1) > div > div.main__body > div.styles__StyleCleaner-sc-8jua4n-0.ImuCo > div > div > div > div > div > div.Box-sc-1el6a4q-0.Body-sc-12hmyqf-0.bOMQhC.eeMbHW > div:nth-child(3) > a:nth-child(2) > div > div.TooltipReference-sc-15tsulq-1.iRubGO.Tooltip-sc-wn2msi-0.kxLiwV > div > div.TextCollapse-sc-wn2msi-4.bzwcGm > span', 2500);
+    await clickElement('div:nth-child(3) > a:nth-child(2) > div > div.TooltipReference-sc-15tsulq-1.iRubGO.Tooltip-sc-wn2msi-0.kxLiwV > div > div.TextCollapse-sc-wn2msi-4.bzwcGm > span', 2500);
     await clickElement("#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe > div.indexstyles__PageSectionWrapper-partner-portal-crm__sc-1xv6gqj-0.hQKZRA > div.sc-gGnURB.iJWWCJ > div.sc-crXcEl.jwSbcz > div > div > button", 2500);
     await clickElement('#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe.indexstyles__CampaignsPageBody-partner-portal-crm__sc-4bw979-0.iZidhd > div.sc-gGnURB.jRpMA-d > div:nth-child(1)', 2500);
     await clickElement('div.sc-bczRLJ.cllSmU > button', 2500);
