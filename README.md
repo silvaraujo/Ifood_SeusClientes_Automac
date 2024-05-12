@@ -1,4 +1,11 @@
 # Ifood_SeusClientes_Automac
-Automação das ações na Aba - Seus Clientes
+`Esse código simula uma automação de tarefas repetitivas dentro do aplicativo do Ifood`
 
-É necessário corrigir a lógica do preenchimento da data, verificando o parâmetro mês.
+Seu objetivo é automatizar a tarefa de criação de cupons que se localiza em:
+
+Marketing > Seus clientes > Crie novas promoções
+*colocar imagens no md*
+
+o código foi construído em javascript puro e sua execução é feita diretamente no compilador de qualquer browser
+*colocar imagens no md*
+

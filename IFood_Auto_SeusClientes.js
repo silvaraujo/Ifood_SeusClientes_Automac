@@ -1,28 +1,45 @@
+//padrão de intervalo de execução
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+//padrão de click
 const clickElement = async (selector, delayTime) => {
     await delay(delayTime);
     const element = document.querySelector(selector);
     if (element) element.click();
 };
 
+//padrão de seleção das datas dentro da limitação do código do Ifood
 const selectDate = async (delayTime) => {
-    const dateBox = document.querySelector('#dueDate');
-    dateBox.click();
-    
     await new Promise(resolve => setTimeout(resolve, delayTime)); // Aguarda o tempo especificado
     
+    const dateBox = document.querySelector('#dueDate');
+    const valorInput = dateBox.value;
+    const InputSlip = valorInput.split('/');
+
+    const mesInput = parseInt(InputSlip[1]);
+
     const hoje = new Date();
-    const selector_quatrosemanas = document.querySelectorAll('.DayPicker-Week .DayPicker-inner-day');
+    let mesAtual = hoje.getMonth();
+        mesAtual++;
 
-    for (const data of selector_quatrosemanas) {
-        const numeroDia = parseInt(data.textContent, 10);
+    dateBox.click();
 
-        if (numeroDia > hoje.getDate()) {
-            data.click();
-            break;
-        }
+    if(mesAtual < mesInput) {
+        const volta_mes = document.querySelector('#details > div.sc-gGnURB.indexstyles__Grid-partner-portal-crm__sc-1t9nl9l-0.hyfqCU.eTMmkS > div.sc-jIAOiI.gkiNsn.indexstyles__Picker-partner-portal-crm__sc-s9ajq6-0.igrYJy > div > div.DayPickerInput-OverlayWrapper > div > div > div > div.DayPicker-NavBar > span.DayPicker-NavButton.DayPicker-NavButton--prev')
+        volta_mes.click()
     }
+
+    const selector_quatrosemanas = document.querySelectorAll('.DayPicker-Week .DayPicker-inner-day');
+    setTimeout(() => {
+        for (const data of selector_quatrosemanas) {
+            const numeroDia = parseInt(data.textContent, 10);
+    
+            if (numeroDia > hoje.getDate()) {
+                data.click();
+                break;
+            }
+         }  
+    }, 1000);    
 };
 
 (async () => {
