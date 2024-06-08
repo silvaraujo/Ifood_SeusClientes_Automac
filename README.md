@@ -1,10 +1,11 @@
-# [Projeto de extensão](https://www.google.com/search?q=cruzeiro+do+sul+virtual+projeto+de+extensão&client=opera-gx&hs=9NT&sca_esv=4b3fc1098448558d&sca_upv=1&sxsrf=ADLYWIIiadBWgzieTCkGyREY5U0J8WsB3Q%3A1717805022900&ei=3p9jZt6mNs7T1sQPy_TkkQs&udm=&oq=cruzeiro+do+sul+virtual+projeto+de+ex&gs_lp=Egxnd3Mtd2l6LXNlcnAiJWNydXplaXJvIGRvIHN1bCB2aXJ0dWFsIHByb2pldG8gZGUgZXgqAggAMgUQIRigATIFECEYoAEyBRAhGJ8FSOUjUN4FWKwbcAF4AZABAZgBsQOgAe4VqgEKMC4xMi4xLjAuMbgBA8gBAPgBAZgCDqAC2xLCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGLADGEMYyAMYigXYAQHCAhkQLhiABBiwAxjRAxhDGMcBGMgDGIoF2AEBwgIFEAAYgATCAgUQLhiABMICCxAuGIAEGMcBGK8BwgIGEAAYFhgewgIIEAAYgAQYogSYAwCIBgGQBhK6BgYIARABGAiSBwYxLjEyLjGgB_pO&sclient=gws-wiz-serp) - Automação de trabalhos repetitivos em Javascript
-Esse [código](/Ifood_Automac_SeusClientes.js), escrito em javascript, simula uma automação dentro do aplicativo do [IFood](https://pt.wikipedia.org/wiki/IFood) citado no resumo a seguir.
+# [PROJETO DE EXTENSÃO](https://www.google.com/search?q=cruzeiro+do+sul+virtual+projeto+de+extensão&client=opera-gx&hs=9NT&sca_esv=4b3fc1098448558d&sca_upv=1&sxsrf=ADLYWIIiadBWgzieTCkGyREY5U0J8WsB3Q%3A1717805022900&ei=3p9jZt6mNs7T1sQPy_TkkQs&udm=&oq=cruzeiro+do+sul+virtual+projeto+de+ex&gs_lp=Egxnd3Mtd2l6LXNlcnAiJWNydXplaXJvIGRvIHN1bCB2aXJ0dWFsIHByb2pldG8gZGUgZXgqAggAMgUQIRigATIFECEYoAEyBRAhGJ8FSOUjUN4FWKwbcAF4AZABAZgBsQOgAe4VqgEKMC4xMi4xLjAuMbgBA8gBAPgBAZgCDqAC2xLCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGLADGEMYyAMYigXYAQHCAhkQLhiABBiwAxjRAxhDGMcBGMgDGIoF2AEBwgIFEAAYgATCAgUQLhiABMICCxAuGIAEGMcBGK8BwgIGEAAYFhgewgIIEAAYgAQYogSYAwCIBgGQBhK6BgYIARABGAiSBwYxLjEyLjGgB_pO&sclient=gws-wiz-serp) - Automação de trabalhos repetitivos com Javascript.
 
-`Nota: Ele foi escrito para ser compilado direto no console do navegador!`
+Esse [código](/Ifood_Automac_SeusClientes.js) simula uma automação dentro do aplicativo do [IFood](https://pt.wikipedia.org/wiki/IFood) citado no resumo a seguir.
+
+> Nota: Ele foi escrito para ser compilado direto no console do navegador!
 
 ## Resumo
-Seu objetivo deste projeto é automatizar a criação de cupons no ["Portal do Parceiro"](https://portal.ifood.com.br/login) do IFood, reduzindo o tempo gasto e minimizando as possibilidades de erros na execução dessa tarefa. Abaixo, segue uma imagem da página inicial do portal:
+O objetivo deste projeto é automatizar a criação de cupons no ["Portal do Parceiro"](https://portal.ifood.com.br/login) do IFood, reduzindo então o tempo gasto e minimizando as possibilidades de erros na execução dessa tarefa. Abaixo, segue uma imagem da página inicial do portal:
 
 ![Página inicial do portal do parceiros](/arq/fotos/TelaInicial.png)
 

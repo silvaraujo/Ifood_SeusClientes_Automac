@@ -1,4 +1,4 @@
-//padrão de intervalo de execução
+//padrão no intervalo de execução
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 //padrão de click
@@ -8,10 +8,11 @@ const clickElement = async (selector, delayTime) => {
     if (element) element.click();
 };
 
-//padrão de seleção das datas dentro da limitação do código do Ifood
+//padrão de seleção das datas dentro do escopo do código do App Ifood
 const selectDate = async (delayTime) => {
-    await new Promise(resolve => setTimeout(resolve, delayTime)); // Aguarda o tempo especificado
+    await new Promise(resolve => setTimeout(resolve, delayTime));
     
+    //Localizador e lógica da construção da variável de data no contexto desejado(um dia a frente)
     const dateBox = document.querySelector('#dueDate');
     const valorInput = dateBox.value;
     const InputSlip = valorInput.split('/');
@@ -24,11 +25,13 @@ const selectDate = async (delayTime) => {
 
     dateBox.click();
 
+    //condicional de escolha na barra de mês
     if(mesAtual < mesInput) {
         const volta_mes = document.querySelector('#details > div.sc-gGnURB.indexstyles__Grid-partner-portal-crm__sc-1t9nl9l-0.hyfqCU.eTMmkS > div.sc-jIAOiI.gkiNsn.indexstyles__Picker-partner-portal-crm__sc-s9ajq6-0.igrYJy > div > div.DayPickerInput-OverlayWrapper > div > div > div > div.DayPicker-NavBar > span.DayPicker-NavButton.DayPicker-NavButton--prev')
         volta_mes.click()
     }
 
+    //função resolutiva
     const selector_quatrosemanas = document.querySelectorAll('.DayPicker-Week .DayPicker-inner-day');
     setTimeout(() => {
         for (const data of selector_quatrosemanas) {
@@ -42,6 +45,7 @@ const selectDate = async (delayTime) => {
     }, 1000);    
 };
 
+//Passos da execução do script de cliques e seleções
 (async () => {
     await clickElement('div:nth-child(3) > a:nth-child(2) > div > div.TooltipReference-sc-15tsulq-1.iRubGO.Tooltip-sc-wn2msi-0.kxLiwV > div > div.TextCollapse-sc-wn2msi-4.bzwcGm > span', 2500);
     await clickElement("#micro-frontend-crm > div.indexstyles__Root-partner-portal-crm__sc-3qo625-0.kXfgum > div.indexstyles__Root-partner-portal-crm__sc-kd480-0.cdQLVe > div.indexstyles__PageSectionWrapper-partner-portal-crm__sc-1xv6gqj-0.hQKZRA > div.sc-gGnURB.iJWWCJ > div.sc-crXcEl.jwSbcz > div > div > button", 2500);
