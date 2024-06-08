@@ -16,4 +16,4 @@ O objetivo deste projeto é automatizar a criação de cupons no ["Portal do Par
 
 ## Execução do programa
 
-Clique aqui e assista o [vídeo do programa em execução](/arq/vídeos/AutomacEXEC.mp4).
+Clique aqui e assista o [vídeo do programa em execução](/arq/vídeos/AutomacEXEC.mov).
