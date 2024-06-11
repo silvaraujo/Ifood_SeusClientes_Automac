@@ -16,6 +16,11 @@ O objetivo deste projeto é automatizar a criação de cupons no ["Portal do Par
 
 ## Execução do programa
 
-Assista o vídeo do programa em execução a seguir.
+#Assista o vídeo do programa em execução a seguir.
 
 https://github.com/silvaraujo/Ifood_SeusClientes_Automac/assets/159500703/67a38428-bd3a-4f58-a2ce-6c6db60f0cbc
+
+#Veja o programa sendo executado por fora.
+
+https://youtu.be/8c29gxU6hgc
+
